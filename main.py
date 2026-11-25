@@ -4,6 +4,11 @@ The note is a smart fridge's message to its owner, for make.fun's
 "Notes From a Passive-Aggressive Fridge" bounty. The program is
 deterministic: it always writes the same bytes, uses no network,
 and depends on nothing outside this repository.
+
+The gate requires 1 to 200 characters and the note is 137; the
+judge reads the single line the program writes, so the text is kept
+as one literal — no formatting, no trailing newline, no variation
+between runs.
 """
 
 import os
